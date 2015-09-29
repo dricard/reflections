@@ -8,3 +8,36 @@ when you first create a repository.
 The staging area is not a physical directory, it's a list of tracked files ready to be commited. 
 Its value is in the fact that you can decide which of the files you are working on should be in the 
 same commit to track a single logical change in your code.
+
+#### How can you use the staging area to make sure you have one commit per logical change?
+
+you can only stage files that are related to the logical change you are commiting
+
+#### What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+when you want to try out an experimental feature without compromising 
+the production code, or you want to create an alternate version of the
+program. By keeping these in separate branches, you can drop those 
+modifications if they don't turn out well, or you can merge them back
+in if it works. By keeping separate branches for each feature, you can
+merge in features one by one as they mature or drop them without 
+loosing the others.
+
+#### How do the diagrams help you visualize the branch structure?
+
+It show the reachability/parents of each commit and lets you see what
+changes were made on the master branch while since a branch started, 
+for instance.
+
+#### What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+merging takes all the changes made in the two branch into a single commit.
+Since we keep both history, the new merged commit has two parents.
+
+#### What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+In many cases there are no conflicts so it makes sense to let git
+automatically merge in those cases.
+For any case which is not obvious, it's better to do it manually since
+it's impossible for the computer to know which version should be merge
+or how.
