@@ -1,0 +1,4 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+There is a hidden directory that is created named `.git` which doesn't contain anything yet as no files are tracked
+when you first create a repository.
