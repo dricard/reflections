@@ -1,36 +1,42 @@
-1
+#### How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
 seeing the difference between the old and new version lets you focus on things may have broken
 it's faster than going line by line
 many tools let you 'keep' or 'revert to previous' changes
 
-2
+#### How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
 it makes you a better programmer because you can easily try out new things and safely return
 to a previous version. That way you can work on a new feature without breaking anything
 
-3
-manual vs automatic saving
+#### What do you think are the pros and cons of manually choosing when to commit, like you do in Git, vs having versions automatically saved, like Google Doc does?
+
 when you choose when to commit you can decide to save at a logical point, with code that compiles
 it's easier to document the commit when you do it yourself
 automatic saves can only time-stamp so there can be no explanation of what you did up to that point
 or what changed from the previous save
 
-4
+#### Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
 Because when you want to roll-back to a previous version, you want all the files as they were at
 the time you commited, so that everything works together well
 
-5
+#### How can you use the commands git log and git diff to view the history of files?
+
 git log lets you review the changes you made in the past as you browse through the commit messages
 once you've found the comment you want you can see what where the changes between that change and
 the previous or any other commit with git diff
 
-6
+#### How might using version control make you more confident to make changes that could break something?
+
 I'll be more confident making changes that can break my code because it's easy to revert back to
 a state where everything works, and I can easily retrace exactly where I introduced a bug in
 my code. So I can start experimenting with confidence that I can revert to a previous version.
 It's even more true with branches, which makes it easy to work on different experimental
 features in parallele without interfering with the main production branch.
 
-7
+#### Now that you have your workspace set up, what do you want to try using Git for?
+
 I'll want to use git for every project that I may want to revert to a previous version
 that includes things likes code of course, but can also be used for document control
 process documents, style guides, etc.
